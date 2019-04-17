@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/set4"
+    tools:context="pro.himanshu.cusatreader.DetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="376dp"
+        android:layout_height="434dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="176dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/college"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:visibility="visible"
+            app:layout_constraintHorizontal_bias="0.102"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RadioGroup
+            android:id="@+id/RGroup"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_editor_absoluteY="84dp">
+
+            <RadioButton
+                android:id="@+id/soe"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:text="@string/soe" />
+
+            <RadioButton
+                android:id="@+id/cucek"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cucek" />
+
+            <RadioButton
+                android:id="@+id/others"
+                android:layout_width="293dp"
+                android:layout_height="wrap_content"
+                android:text="@string/oth" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/select_b"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:visibility="visible"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <RadioGroup
+            android:id="@+id/R1Group"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="272dp">
+
+            <RadioButton
+                android:id="@+id/it"
+                android:layout_width="292dp"
+                android:layout_height="match_parent"
+                android:text="@string/IT" />
+
+            <RadioButton
+                android:id="@+id/cse"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:text="@string/CSE" />
+
+            <RadioButton
+                android:id="@+id/ece"
+                android:layout_width="293dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ECE" />
+
+
+            <RadioButton
+                android:id="@+id/eee"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:text="@string/EEE" />
+
+            <RadioButton
+                android:id="@+id/me"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ME" />
+
+            <RadioButton
+                android:id="@+id/ce"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:text="@string/CE" />
+
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="294dp"
+            android:layout_height="37dp"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Save"
+            tools:layout_editor_absoluteX="134dp"
+            tools:layout_editor_absoluteY="496dp" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="472dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:hint="@string/Enter_Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>
